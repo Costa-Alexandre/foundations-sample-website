@@ -100,7 +100,7 @@ Building on the previous example, we will use a framework for building websites 
 
 Running a website using Flask using the same basic command, `uwsgi`, but requires a few more arguments:
 
-`uwsgi --http-socket 127.0.0.1:8080 --wsgi-file sample_website/website.py --callable app --processes 4 --threads 2 --stats 127.0.0.1:8181 -H venv/`
+`uwsgi --http-socket 127.0.0.1:8080 --wsgi-file sample_website/website.py --callable app --processes 4 --threads 2 --stats 127.0.0.1:8181 -H ubuntu_venv/`
 
 You should now be able to go http://localhost:8080 in your browser and see the Hello, Flask! Website
 
@@ -171,8 +171,8 @@ Wait! Red and Fail and Error is bad, right? Yes, you are correct. Have a look to
 
 There are a few ways to fix this, and you should ask yourself what you want to do. We are now getting into the fine art of writing tests: they need to be helpful and catch errors, without being too fragile. Before changing code, you should ask yourself what the goal is. Do you want to:
 1. Always greet users with "Hello, Flask!" like in the original example?
-1.  Always greet users with the new message you wrote, in this case, "Hello, Adam!"?
-1. Write something more flexible, for instance, a piece of code which checks that there is an h1 HTML tag returned that starts with "Hello,", and what comes after doesn't matter, as long as it has more than 2 characters?
+2.  Always greet users with the new message you wrote, in this case, "Hello, Adam!"?
+3. Write something more flexible, for instance, a piece of code which checks that there is an h1 HTML tag returned that starts with "Hello,", and what comes after doesn't matter, as long as it has more than 2 characters?
 
 To learn a bit more about testing, start with option 2: change the test so that it matches the new html you have written. In more complex code, a flexible solution like described on option 3 could be better - but it is also not without difficulties to get it right.
 
