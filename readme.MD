@@ -100,7 +100,7 @@ Building on the previous example, we will use a framework for building websites 
 
 Running a website using Flask using the same basic command, `uwsgi`, but requires a few more arguments:
 
-`uwsgi --http-socket 127.0.0.1:8080 --wsgi-file sample_website/website.py --callable app --processes 4 --threads 2 --stats 127.0.0.1:8181 -H ubuntu_venv/`
+`uwsgi --http-socket 127.0.0.1:8080 --wsgi-file sample_website/website.py --callable app --processes 4 --threads 2 --stats 127.0.0.1:8181 -H venv/`
 
 You should now be able to go http://localhost:8080 in your browser and see the Hello, Flask! Website
 
