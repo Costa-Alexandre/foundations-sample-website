@@ -1,22 +1,13 @@
-<!-- This is a basic html page which Flask can serve. 
-It does not use the power of Flask, but is easier to read than some of the other files. 
--->
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html>
+{% block content %}
 
-<!-- learn more about what belongs in head and how it is used here 
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
-<head>
-	<title>A Static Page</title>
-	<meta charset="utf-8"/>
-    <link rel="stylesheet" href="../static/styles.css">
-</head> 
-<body>
-    <h1 class="banner">Hello, Static HTML!</h1>
-    <p>This page is static HTML, or hard-coded. It is similar to what we did in class the first week on glitch. </p>
-    <p>So far, we are not using the power of Flask, but you will in this assignment!</p>
+    <h1 class="banner">Yes! This is my first Flask page!</h1>
+    <div class="image-text">
+        <img id="flask-logo" src="https://www.kindpng.com/picc/m/188-1882559_python-flask-hd-png-download.png">
+        <p>This page is the home!!! As you can see by the image to the left, this was developed using Flask.</p>
+        <p> Want to meet the brain behind this <em>WONDERFUL</em> website? <a href="/contact">Contact me!</a></p> 
+    </div>
+     
 
-    <p> To see a page which starts to use Flask to <em>generate</em> dynamic code, <a href="/first-page">click here</a>.</p>
-</body>
-</html>
+{% endblock %}

@@ -8,15 +8,22 @@
   	<meta charset="utf-8"/>
     <!-- include the css from the file static/style.css -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
 
   <!-- this headline will appear on all pages. -->
   <header>
-    <div class="banner">
-      <h1> All about CODE </h1> 
-      <h3> A really great place. </h3>
-    </div>
+    <nav class="nav">
+      <div class="nav-buttons">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/code">CODE</a>
+        <a class="nav-link" href="/author">Author</a>
+        <a class="nav-link" href="/contact">Contact</a>
+       </div>
+     </nav>
   </header>
 
   <!-- This is the part which will be different on each page. 
@@ -26,6 +33,6 @@
     {% endblock %}
   </main>
   <footer>
-    <h3> Made with love </h3>
+    <h3> This is a beautiful footer </h3>
   </footer>
   </body>
