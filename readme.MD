@@ -1,3 +1,5 @@
+## [Link to site running on GCloud](https://foundations-cicd-305721.ey.r.appspot.com/)
+
 # Foundations of Software Engineering
 This repository provides a starting point for students participating in the Foundations course at CODE University.
 
