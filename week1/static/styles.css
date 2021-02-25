@@ -56,7 +56,10 @@ footer{
 }
 
 .image-text img{
-    max-width: 20%;
+    max-width: 320px;
+    max-height: 320px;
+    min-height: 160px;
+    min-width: 160px;
 }
 
 .image-text p{

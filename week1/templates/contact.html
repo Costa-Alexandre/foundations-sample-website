@@ -1,6 +1,27 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <p> contact form here  </p>
+    <p> Contact me!  </p>
+    <form action="" method="post">
+        <div>
+            <label for="form-name">Name:</label><input type="text" name="name" id="form-name"> 
+        </div>
+        <div>
+            <label for="form-email">E-mail</label><input type="text" name="email" id="form-email">            
+        </div>
+        <div>
+            <p>Reason for Contacting:</p>
+            <input type="radio" name="reason" id="reason-awesome"><label for="reason-awesome">Because you're awesome!</label>
+            <input type="radio" name="reason" id="reason-fan"><label for="reason-fan">Because I'm your biggest fan!</label>            
+        </div>
+        <div> 
+            <label for="message">Compliments, adulations, courtesies, admirations: </label><input type="text" name="message" id="form-message">      
+        </div>
+        <div>
+           <input type="button" value="Submit"> 
+        </div>
+        
+        
+    </form>
 
 {% endblock %}
