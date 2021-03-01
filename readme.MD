@@ -489,4 +489,3 @@ That's it, you're done setting it up! Continue with this week's assignment :)
 
 ### Problems with uWSGI 
 A number of issues came up in Spring '2021, both with M1 Macs and Windows. As an alternative to using uwsgi, you can test locally using Flask's built-in development server, using the command `flask run`. Note that you will have to set environment variables for this to work. See the documentation and [tutorials](https://flask.palletsprojects.com/en/1.1.x/quickstart/) for how to set this up. 
->>>>>>> upstream/main
