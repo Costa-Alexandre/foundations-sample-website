@@ -1,5 +1,3 @@
-ub-actions/deploy-appengine@main
-      with:
 #based on https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-python 
 
 name: Foundations Test Website
@@ -55,4 +53,3 @@ jobs:
         credentials: ${{ secrets.GAE_SA_KEY }}
     - name: Cleanup Old Versions on Google App Engine 
       run: gcloud app versions delete --quiet `gcloud app versions list --format="value(id)[terminator=' ']" --filter="traffic_split=0"`
-
