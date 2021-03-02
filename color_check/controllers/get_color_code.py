@@ -13,12 +13,17 @@ def get_color_code(color_name):
     # Open the file at data/css-color-names.json, and return the hex code
     # The file can be considered as JSON format, or as a Python dictionary.
 
+    # controlling for upper case and leading/trailing spaces
+    try:
+        color_name = color_name.lower().strip()
+    except AttributeError:
+        pass
+
     try:
         with open('color_check/data/css-color-names.json') as f:
             data = json.load(f)
             color_hex_code = data[color_name]
     except KeyError:
         color_hex_code = None
-        print('Color name not recognized')
 
     return color_hex_code
