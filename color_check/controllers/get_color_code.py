@@ -6,8 +6,6 @@
 # for example by logging the request and error, and the user,
 # letting them know that their color doesn't exist.
 import json
-# import color_check
-
 
 def get_color_code(color_name):
     # this is where you should add your logic to check the color.
