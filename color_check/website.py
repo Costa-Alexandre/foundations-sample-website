@@ -19,7 +19,7 @@ def show_color():
     # - check if the color exists in our list, return the hex code if it does
     # - render a new page which shows a square of that color and its name
     # - if the color doesn't exist, give the user a useful error message.
-    # - create a log.txt file which records (logs) the user requests. 
+    # - create a log.txt file which records (logs) the user requests.
 
     user_submitted_string = 'blue'
     color_hex_code = get_color_code(user_submitted_string)
