@@ -1,5 +1,5 @@
 # This file should contain a function called get_color_code().
-# This function should take one argument, a color name,
+# This function should take 1 argument, a color name,
 # and it should return one argument, the hex code of the color,
 # if that color exists in our data. If it does not exist, you should
 # raise and handle an error that helps both you as a developer,
