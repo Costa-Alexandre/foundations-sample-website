@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <p> {{ color_name }} is a great color!
+    <p> {{ color_name }} hex code is {{ color_hex_code }} and looks like this:
     </p>
 
-    <div style="height: 1em; width: 1em; background-color: {{ color_hex_code }}">
+    <div style="height: 1em; width: 10em; background-color: {{ color_hex_code }}">
     </div>
+    <br>
+    <button onclick="window.location.href='/'">Try again</button>
 {% endblock %}

@@ -6,6 +6,10 @@
 # for example by logging the request and error, and the user,
 # letting them know that their color doesn't exist.
 import json
+import logging
+
+logging.basicConfig(filename='log.txt', level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - "%(message)s"')
 
 
 def get_color_code(color_name):
@@ -13,17 +17,21 @@ def get_color_code(color_name):
     # Open the file at data/css-color-names.json, and return the hex code
     # The file can be considered as JSON format, or as a Python dictionary.
 
+    # log user color
+    logging.info(color_name)
+
     # controlling for upper case and leading/trailing spaces
     try:
         color_name = color_name.lower().strip()
     except AttributeError:
-        raise TypeError("User didn't submit a string")
+        logging.error("User did not submit a string")
 
     try:
         with open('color_check/data/css-color-names.json') as f:
             data = json.load(f)
             color_hex_code = data[color_name]
     except KeyError:
+        logging.error("'%s' is not recognized", color_name)
         raise TypeError("Submitted string does't have a match in JSON file")
 
     return color_hex_code
