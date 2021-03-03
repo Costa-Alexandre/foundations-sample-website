@@ -17,13 +17,13 @@ def get_color_code(color_name):
     try:
         color_name = color_name.lower().strip()
     except AttributeError:
-        pass
+        raise TypeError("User didn't submit a string")
 
     try:
         with open('color_check/data/css-color-names.json') as f:
             data = json.load(f)
             color_hex_code = data[color_name]
     except KeyError:
-        color_hex_code = None
+        raise TypeError("Submitted string does't have a match in JSON file")
 
     return color_hex_code

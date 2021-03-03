@@ -23,15 +23,14 @@ def show_color():
 
     req = request.form
     user_submitted_string = req.get("color")
-    color_hex_code = get_color_code(user_submitted_string)
-
-    if color_hex_code is None:
-        return render_template('nocolor.html', page_tile="Not Found",
-                               color_name=user_submitted_string)
-    else:
+    try:
+        color_hex_code = get_color_code(user_submitted_string)
         user_submitted_string = user_submitted_string.capitalize().strip()
         return render_template('color.html', page_title="Show Color",
                                color_hex_code=color_hex_code,
+                               color_name=user_submitted_string)
+    except TypeError:
+        return render_template('nocolor.html', page_tile="Not Found",
                                color_name=user_submitted_string)
 
 
