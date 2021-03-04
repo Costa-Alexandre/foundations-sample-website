@@ -1,18 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <p> Write the name of a color to find out its CSS hex code:
-    
-    
-    <!-- when the user submits this form, it will send the information submitted from the client (frontend)
-    to the server (backend). It will send that infromation to a particular URI, at "/color". 
-    Your server will then run the code which is defined in website.py at that route. -->
 
-    <form action="/color" method="post">
-        <!-- add the contents of your form here -->
-        <input type="text" name="color" id="color" placeholder="Try 'Blue' or 'Teal'" autofocus required>
-    </form>
-
-    </p>
+<p> Write the name of a color to find out its CSS hex code:</p>
+<form action="/color" method="post">
+  <input type="text" name="color" id="color" placeholder="Try 'Blue' or 'Teal'" autofocus required>
+</form>
 
 {% endblock %}

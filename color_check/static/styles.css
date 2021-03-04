@@ -1,56 +1,55 @@
 body {
-    font-family: 'Pontano Sans', sans-serif;
-    text-align: center;
-    font-size: 20px;
-    width: fit-content;
+    width: 50%;
     height: 100vh;
     margin: auto;
-    color: white;
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
-.banner {
-    margin-top: 2rem;
-    color: black;
-    margin-bottom: 1rem;
-}
-
-footer {
-    margin-top: 1rem;
-    text-align: center;
-    font-family: monospace;
-    font-size: 0.6em;
-}
-
-#title{
+h1{
     font-family: 'Special Elite', cursive;
     color: white;
-    font-size: 3em;
-    padding-top: 2em;;
+    font-size: 4.236rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    margin: 2.618rem 0;
+    width: 100%;
+}
+
+main{
+    text-align: center;
+    width: 100%;
+}
+
+main p{
+  font-family: 'Pontano Sans', sans-serif;
+  margin: 1rem;
+  color: white;
+  font-size: 1.618rem;
+}
+
+#color{
+    width: 61.8%;
+    font-size: 1rem;
+    padding: 0.618rem;
+    margin-bottom: 1rem;
 }
 
 .center-div{
     margin: auto;
 }
 
-#color{
-    width: 100%;
-    font-size: 0.8em;
-    padding: 4px;
-}
-
 .button{
     font-family: 'Pontano Sans', sans-serif;
     color: white;
-    padding: 8px;
+    padding: 0.618rem;
     color: black;
     border: 2px solid #555555;
     padding: 4px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1rem;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -66,7 +65,38 @@ footer {
 
   .button:hover span::after{
     content: "Again?";
-    font-size: 1.62em;
+    font-size: 1.62rem;
     transition-duration: 1s;
     color:white;
   }
+
+footer {
+    text-align: center;
+    font-family: monospace;
+    font-size: 1rem;
+    color: white;
+}
+
+footer a:link{
+  text-decoration: none;
+  color: white;
+}
+
+footer a:visited{
+  color: white;
+}
+
+footer a:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+@media(max-width: 1200px){
+  body {
+    width: 80%;
+}
+
+@media(max-width: 800px){
+  body {
+    width: 100%;
+}
