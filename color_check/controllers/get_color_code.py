@@ -8,6 +8,10 @@
 import json
 import logging
 
+logging.basicConfig(filename='/abracadabra/will/make/your/logdisappear.txt',
+                    level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - "%(message)s"')
+
 
 def get_color_code(color_name):
     # this is where you should add your logic to check the color.
