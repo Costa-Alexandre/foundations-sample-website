@@ -6,7 +6,7 @@
 # for example by logging the request and error, and the user,
 # letting them know that their color doesn't exist.
 import json
-import logging
+# import logging
 
 # logging.basicConfig(filename='log.txt', level=logging.INFO,
 #                     format='%(asctime)s - %(levelname)s - "%(message)s"')
