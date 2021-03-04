@@ -8,7 +8,7 @@
 import json
 import logging
 
-logging.basicConfig(filename='/abracadabra/will/make/your/logdisappear.txt',
+logging.basicConfig(filename='/temp/log.txt',
                     level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - "%(message)s"')
 
