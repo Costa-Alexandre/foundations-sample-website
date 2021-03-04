@@ -1,10 +1,6 @@
 from flask import Flask, request
 from flask import render_template
 from color_check.controllers.get_color_code import get_color_code
-import logging
-
-logging.basicConfig(filename='log.txt', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - "%(message)s"')
 
 app = Flask(__name__)
 
