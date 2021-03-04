@@ -8,13 +8,15 @@
   	<meta charset="utf-8"/>
     <!-- include the css from the file static/style.css -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-  </head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Special+Elite&display=swap" rel="stylesheet">  
+</head>
   <body>
 
   <!-- this headline will appear on all pages. -->
   <header>
     <div class="banner">
-      <h1> Color Check  </h1> 
+      <h1 id="title"> Color Check  </h1> 
     </div>
   </header>
   <main>
@@ -22,6 +24,6 @@
     {% endblock %}
   </main>
   <footer>
-    <h3> By Alex Costa </h3>
+    <p> By Alex Costa </p>
   </footer>
   </body>
