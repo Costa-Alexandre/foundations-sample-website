@@ -8,8 +8,8 @@
 import json
 import logging
 
-logging.basicConfig(filename='log.txt', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - "%(message)s"')
+# logging.basicConfig(filename='log.txt', level=logging.INFO,
+#                     format='%(asctime)s - %(levelname)s - "%(message)s"')
 
 
 def get_color_code(color_name):
