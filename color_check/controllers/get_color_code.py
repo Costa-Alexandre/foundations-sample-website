@@ -8,7 +8,7 @@
 import json
 import logging
 
-logging.basicConfig(filename='/temp/log.txt',
+logging.basicConfig(filename='/tmp/log.txt',
                     level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - "%(message)s"')
 
